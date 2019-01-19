@@ -1,0 +1,2 @@
+# newsR
+news aggregator
