@@ -50,9 +50,9 @@ CORS_ORIGIN_WHITELIST = (
     'meow-backend.herokuapp.com'
 )
 
-CSRF_TRUSTED_ORIGINS = {
+CSRF_TRUSTED_ORIGINS = (
     'localhost:8080'
-}
+)
 
 # Application definition
 
