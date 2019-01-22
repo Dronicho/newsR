@@ -34,4 +34,4 @@ def crate_new_user(request):
 def show_users(requset):
     users = User.objects.all()
     output = '\n'.join([user.username for user in users])
-    return output
+    return HttpResponse(output)
