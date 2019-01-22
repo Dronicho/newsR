@@ -46,6 +46,7 @@ CORS_ORIGIN_WHITELIST = (
     'google.com',
     'hostname.example.com',
     'localhost:8000',
+    'localhost:8080',
     '127.0.0.1:9000',
     'meow-backend.herokuapp.com'
 )
