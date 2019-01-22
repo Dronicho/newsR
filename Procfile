@@ -1,1 +1,1 @@
-web: gunicorn newsR.wsgi --log-level=info --log-file -
+web: gunicorn news.wsgi --log-level=info --log-file -
