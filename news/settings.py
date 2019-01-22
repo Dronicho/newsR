@@ -36,7 +36,10 @@ SECRET_KEY = 'x5g!es0dm)62o)6n$!7j8yi#-=o9^i_!ndxy&*k%-y^9v7ba!g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['meow-backend.herokuapp.com']
+ALLOWED_HOSTS = [
+    'meow-backend.herokuapp.com',
+    'localhost:8000'
+]
 
 
 # Application definition
