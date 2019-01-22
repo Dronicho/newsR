@@ -38,7 +38,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'meow-backend.herokuapp.com',
-    'localhost:8000'
+    'localhost:8000',
+    'localhost:8080'
 ]
 
 
