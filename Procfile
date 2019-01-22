@@ -1,1 +1,1 @@
-web: gunicorn locallibrary.wsgi --log-file -
+web: gunicorn meow-backend.wsgi --log-level=info --log-file -
