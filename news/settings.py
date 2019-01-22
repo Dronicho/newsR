@@ -53,7 +53,7 @@ CORS_ORIGIN_WHITELIST = (
 # Application definition
 
 INSTALLED_APPS = [
-    'corsheader',
+    'corsheaders',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
