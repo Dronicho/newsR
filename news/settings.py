@@ -39,15 +39,14 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'meow-backend.herokuapp.com',
     'localhost:8000',
-    'localhost:8080'
+    'localhost:8080',
+    '127.0.0.1'
 ]
 
 CORS_ORIGIN_WHITELIST = (
     'google.com',
-    'hostname.example.com',
-    'localhost:8000',
     'localhost:8080',
-    '127.0.0.1:9000',
+    '127.0.0.1:8000',
     'meow-backend.herokuapp.com'
 )
 
