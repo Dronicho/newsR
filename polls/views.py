@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
+from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 from .models import Question
 
@@ -22,7 +23,7 @@ def results(request, question_id):
 def vote(request, question_id):
     return HttpResponse('vote. Question id: {}'.format(question_id))
 
-
+@csrf_exempt
 def crate_new_user(request):
     name = request['username']
     password = request['pass']
