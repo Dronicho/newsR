@@ -1,5 +1,6 @@
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render_to_response
+from django.core.context_processors import csrf
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.contrib.auth.models import User
 from .models import Question
@@ -23,12 +24,13 @@ def results(request, question_id):
 def vote(request, question_id):
     return HttpResponse('vote. Question id: {}'.format(question_id))
 
-@ensure_csrf_cookie
+
 def crate_new_user(request):
     name = request['username']
     password = request['pass']
     user = User.objects.create_user(name, 'sanya@mail.ru', password)
     user.save()
+    return True
 
 
 def show_users(requset):

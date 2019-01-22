@@ -51,7 +51,8 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 CSRF_TRUSTED_ORIGINS = (
-    'localhost:8080'
+    'localhost:8080',
+    '192.168.100.3:8080'
 )
 
 # Application definition
