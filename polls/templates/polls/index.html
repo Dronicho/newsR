@@ -1,0 +1,6 @@
+<p>
+    {% csrf_token %}
+    {% for q in out %}
+    <p><a href="/polls/{{ q.id }}">{{ q.question_text }}</a></p>
+    {% endfor %}
+</p>
