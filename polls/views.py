@@ -1,10 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render_to_response
-from django.views.decorators.csrf import ensure_csrf_cookie
+from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth.models import User
 from .models import Question
 
-
+@csrf_protect
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     output = ', '.join([q.question_text for q in latest_question_list])
@@ -29,6 +29,8 @@ def crate_new_user(request):
     password = request['pass']
     user = User.objects.create_user(name, 'sanya@mail.ru', password)
     user.save()
+    c = {}
+    c.update()
     return True
 
 
